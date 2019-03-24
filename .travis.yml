@@ -1,7 +1,9 @@
 dist: xenial
 language: csharp
-solution: ide2www.sln
 mono: none
 dotnet: 2.2.104
-script:
-  - dotnet build
+solution: ide2www.sln
+jobs:
+  inclulde:
+    - stage: build
+      script: dotnet build
